@@ -1,3 +1,5 @@
-body{
-	background-color:red;
+textarea{
+	display:block;
+	width:200px;
+	height:300px;
 }
