@@ -13,7 +13,7 @@ get "/" do
 end
 
 get "/admin" do
-	erb :admin
+	erb :admin, layout: false
 end
 
 post "/questions" do

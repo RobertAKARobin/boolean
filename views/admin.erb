@@ -1,6 +1,22 @@
-<h2>Questions</h2>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Boolean</title>
+		<style>
+textarea{
+	display:block;
+	width:200px;
+	height:300px;
+}
+		</style>
+	</head>
+	<body>
+		<h1>Boolean Admin</h1>
+		<h2>Questions</h2>
 
-<form method="post" action="/questions">
-	<textarea name="questions"><%= Questions.join("\n") %></textarea>
-	<button type="submit">Update</button>
-</form>
+		<form method="post" action="/questions">
+			<textarea name="questions"><%= Questions.join("\n") %></textarea>
+			<button type="submit">Update</button>
+		</form>
+	</body>
+</html>
