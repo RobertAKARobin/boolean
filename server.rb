@@ -12,9 +12,13 @@ get "/" do
 	erb :index
 end
 
+get "/admin" do
+	erb :admin
+end
+
 post "/questions" do
 	revised_questions = params[:questions].split(/\s*[\n\r]\s*/)
 	Questions.clear
 	Questions.concat revised_questions
-	redirect "/"
+	redirect "/admin"
 end
