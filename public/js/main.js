@@ -1,3 +1,11 @@
+const QuestionsApp = ( () => {
+	return {
+		view: () => {
+			return m('p', 'Welcome!')
+		}
+	}
+} )()
+
 document.addEventListener('DOMContentLoaded', () => {
-	document.getElementById('questions').innerHTML = '<p>Welcome!</p>'
+	m.mount(document.getElementById('questions'), QuestionsApp)
 })
