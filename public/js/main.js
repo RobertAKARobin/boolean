@@ -1,1 +1,3 @@
-console.log('Hello, world!')
+document.addEventListener('DOMContentLoaded', () => {
+	document.getElementById('questions').innerHTML = '<p>Welcome!</p>'
+})
